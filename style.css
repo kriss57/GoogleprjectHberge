@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "open_sansregular"; /*police tel sur font squirrel*/
+  src: url("fonts/OpenSans-Regular-webfont.eot");
+  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+    url("fontsOpenSans-Regular-webfont.woff") format("woff"),
+    url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"),
+    url("fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "open_sansregular", Arial, Helvetica, sans-serif; /*police*/
+}
+ul a {
+  margin-right: 5px;
+  padding-right: 20px;
+}
+
+a:link {
+  text-decoration: none; /*enleve les trait sous le texte des liens*/
+}
+nav {
+  display: flex; /*pour utiliser flexbox*/
+  justify-content: space-between; /*repartir equitablement au bord et fin du conteneur*/
+}
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+#menu-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#right {
+  display: flex;
+  justify-content: right;
+}
+
+#icon1,
+#icon2 {
+  margin-right: 20px;
+  border-radius: 200px;
+}
+
+#my-input {
+  /*barre de recherche*/
+  display: flex;
+  flex-direction: row; /*placé sur une ligne*/
+  justify-content: space-between; /*repartir equitablement au bord et fin du conteneur*/
+  width: 600px; /*largeur*/
+  height: 40px; /*hauteur*/
+  border: 1px solid rgb(206, 204, 204); /*la bordure*/
+  border-radius: 20px; /*bord arrondie*/
+}
+#my-input:hover {
+  /*au passage de la souris*/
+  box-shadow: 0px 0 5px rgb(206, 204, 204);
+}
+
+#my-input > input {
+  flex-grow: 10; /*ettirer la barre de recherche*/
+  border: none; /*enlever contour bordure*/
+  outline: none; /*enleve la bordure de zone de texte*/
+  border-radius: 40%;
+}
+.main-menu {
+  margin-top: 185px;
+}
+#loop {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: gray;
+  opacity: 0.4;
+  width: 21px;
+  height: 19px;
+}
+
+img:hover {
+  cursor: pointer; /*pour que le curseur devienne une main*/
+}
+#my-buttons-container {
+  display: flex;
+  flex-direction: row; /*placé sur une ligne*/
+  padding-top: 43px;
+}
+button {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: none;
+  min-width: 54px;
+  height: 36px;
+  padding-left: 20px; /*espace par rapport a la bordure de gauche*/
+  padding-right: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(206, 204, 204);
+}
+footer {
+  background-color: #f2f2f2;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#footer-left {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0px;
+  align-items: center;
+}
+#footer-left,
+a {
+  padding-left: 20px;
+}
+#feuille {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#imgf {
+  width: 10px;
+}
+
+#footer-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  align-items: center;
+}
+#lieu {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+#lieu,
+p,
+a {
+  color: grey;
+  font-size: 90%;
+}
